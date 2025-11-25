@@ -2,16 +2,14 @@ import React from 'react';
 import { Github, Linkedin, Mail, ChevronDown, Terminal } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { PERSONAL_INFO } from '../constants';
-import SpotlightBorder from './SpotlightBorder'; // Import the new component
+import SpotlightBorder from './SpotlightBorder';
 
 const TerminalHero: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-slate-950 pt-20">
-      {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-      <div className="absolute inset-0 bg-slate-950 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,transparent_70%,black)]"></div>
+      <div className="absolute inset-0 bg-slate-950 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,transparent_70%,black)] overflow-hidden"></div>
       
-      {/* Glowing Orb in background */}
       <motion.div 
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 8, repeat: Infinity }}
@@ -89,6 +87,7 @@ const TerminalHero: React.FC = () => {
                             <a 
                                 key={i} 
                                 href={btn.href}
+                                target='_blank'
                                 className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all ${
                                     btn.primary 
                                     ? 'bg-green-600 hover:bg-green-500 text-white shadow-lg shadow-green-500/20' 

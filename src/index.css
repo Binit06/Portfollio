@@ -1,0 +1,26 @@
+@layer utilities {
+  /* For Chrome, Safari, Edge, and Opera */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #020617; /* matches bg-slate-950 */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b; /* matches slate-800 (Low profile default) */
+    border-radius: 5px;
+    border: 2px solid #020617; /* Creates padding effect */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #22c55e; /* matches green-500 (Highlights on interaction) */
+  }
+
+  /* For Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #1e293b #020617; /* Thumb Track */
+  }
+}
