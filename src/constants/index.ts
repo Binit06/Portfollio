@@ -38,9 +38,19 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
+    company: "Citi Bank",
+    role: "Application Developer Intern",
+    period: "Upcoming",
+    details: [
+      "Selected for the competitive Summer Analyst Program.",
+      "Preparing to contribute to enterprise-scale financial technology solutions.",
+      "Will be working with Agile methodologies and modern software architecture."
+    ]
+  },
+  {
     company: "Cogniwide",
     role: "Software Engineering Intern (Backend)",
-    period: "July 2025 - Present",
+    period: "July 2025 - Oct 2025",
     details: [
       "Developing workflow automation engines from scratch.",
       "Implemented real-time monitoring with Grafana and AWS to ensure system health.",
